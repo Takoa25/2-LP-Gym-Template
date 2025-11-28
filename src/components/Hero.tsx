@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
   const whatsappLink = `https://wa.me/${content.infos.whatsapp}?text=${encodeURIComponent(content.hero.ctaSecondary.whatsappMessage)}`;
 
   return (
-    <section id="hero" className={`relative min-h-[80vh] md:min-h-[90vh] flex md:items-center overflow-hidden ${content.hero.paddingClassesMobile} ${content.hero.paddingClassesDesktop}`}>
+    <section id="hero" className={`relative min-h-[80vh] md:min-h-[85vh] lg:min-h-[85vh] flex md:items-center overflow-hidden ${content.hero.paddingClassesMobile} ${content.hero.paddingClassesDesktop}`}>
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <picture>
@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
         <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent"></div>
       </div>
 
-      <div className="container mx-auto px-4 md:px-8 relative z-10 pt-6 md:pt-0">
+      <div className="container mx-auto px-4 md:px-8 relative z-10 pt-6 md:pt-8 lg:pt-10 pb-8 md:pb-10 lg:pb-16">
         <div className="max-w-xl lg:max-w-2xl animate-fade-in-up">
           <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 border border-primary/30 rounded-full bg-primary/10 backdrop-blur-sm">
             <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>

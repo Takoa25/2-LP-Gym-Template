@@ -166,8 +166,8 @@ export const content: ContentConfig = {
       whatsappMessage: "Olá! Vim pelo site e gostaria de agendar uma aula experimental."
     },
     // Ajuste fino de espaçamento (padding-top)
-    paddingClassesMobile: "pt-22 pb-12",
-    paddingClassesDesktop: "md:pt-34 lg:pt-0 lg:pb-0"
+    paddingClassesMobile: "pt-20 pb-12",
+    paddingClassesDesktop: "md:pt-32 lg:pt-0 lg:pb-0"
   },
 
   // --- STATS (Prova Social) ---
