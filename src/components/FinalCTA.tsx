@@ -2,6 +2,8 @@ import React from 'react';
 import { MessageCircle } from 'lucide-react';
 import { content } from '../Content';
 
+import { WhatsAppIcon } from './WhatsAppIcon';
+
 const FinalCTA: React.FC = () => {
   if (!content.finalCta.enabled) return null;
 
@@ -32,7 +34,7 @@ const FinalCTA: React.FC = () => {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 bg-black text-white px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-2xl"
         >
-          <MessageCircle className="w-6 h-6 text-green-500" />
+          <WhatsAppIcon className="w-6 h-6 text-green-500" />
           {content.finalCta.buttonText}
         </a>
       </div>

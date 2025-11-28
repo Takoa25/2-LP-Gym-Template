@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Menu, X, Dumbbell } from 'lucide-react';
 import { content } from '../Content';
 
+import { WhatsAppIcon } from './WhatsAppIcon';
+
 const Navbar: React.FC = () => {
   if (!content.navbar.enabled) return null;
 
@@ -97,8 +99,9 @@ const Navbar: React.FC = () => {
               href={`https://wa.me/${content.infos.whatsapp}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 bg-gradient-to-r from-green-800 to-green-600 hover:from-green-900 hover:to-green-700 text-white py-4 rounded-xl font-bold text-center uppercase tracking-wider shadow-xl transform hover:scale-105 transition-all duration-300"
+              className="mt-4 bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white py-4 rounded-xl font-bold text-center uppercase tracking-wider shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
             >
+              <WhatsAppIcon className="w-6 h-6" />
               Entrar em contato
             </a>
           </div>

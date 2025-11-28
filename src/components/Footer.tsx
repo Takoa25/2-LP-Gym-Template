@@ -2,6 +2,8 @@ import React from 'react';
 import { Dumbbell, Instagram, Facebook, Youtube, Phone, MessageCircle } from 'lucide-react';
 import { content } from '../Content';
 
+import { WhatsAppIcon } from './WhatsAppIcon';
+
 const Footer: React.FC = () => {
   if (!content.footer.enabled) return null;
 
@@ -98,7 +100,7 @@ const Footer: React.FC = () => {
             <h4 className="font-bold text-white mb-6 uppercase tracking-wider text-sm">Fale Conosco</h4>
             <div className="space-y-4">
               <a href={`https://wa.me/${content.infos.whatsapp}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-zinc-400 hover:text-white transition-colors group">
-                <MessageCircle className="w-5 h-5 text-green-500" />
+                <WhatsAppIcon className="w-5 h-5 text-green-500" />
                 <span>{content.infos.phone}</span>
               </a>
               <div className="flex items-center gap-3 text-zinc-400">
