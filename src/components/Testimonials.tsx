@@ -32,7 +32,14 @@ const Testimonials: React.FC = () => {
               <p className="text-zinc-300 mb-8 leading-relaxed italic">"{t.content}"</p>
 
               <div className="flex items-center gap-4">
-                <img src={t.image} alt={t.name} loading="lazy" className="w-12 h-12 rounded-full object-cover border-2 border-zinc-800" />
+                <img
+                  src={t.image}
+                  alt={t.name}
+                  loading="lazy"
+                  className="w-12 h-12 rounded-full object-cover border-2 border-zinc-800 select-none pointer-events-none"
+                  draggable={false}
+                  onContextMenu={(e) => e.preventDefault()}
+                />
                 <div>
                   <h4 className="text-white font-bold">{t.name}</h4>
                   <p className="text-xs text-zinc-400 uppercase tracking-wider">{t.role}</p>
