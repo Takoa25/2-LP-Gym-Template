@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
   const whatsappLink = `https://wa.me/${content.infos.whatsapp}?text=${encodeURIComponent(content.hero.ctaSecondary.whatsappMessage)}`;
 
   return (
-    <section id="hero" className={`relative min-h-[80vh] md:min-h-[90vh] flex md:items-center overflow-hidden ${content.hero.paddingClassesMobile} md:${content.hero.paddingClassesDesktop}`}>
+    <section id="hero" className={`relative min-h-[80vh] md:min-h-[90vh] flex md:items-center overflow-hidden ${content.hero.paddingClassesMobile} ${content.hero.paddingClassesDesktop}`}>
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <picture>
