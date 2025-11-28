@@ -11,9 +11,11 @@ O site foi desenvolvido para oferecer uma experiência de usuário premium e rá
 
 *   **Design Responsivo:** Otimizado para funcionar perfeitamente em celulares, tablets e computadores.
 *   **Foco em Conversão:** Botões de ação (CTAs) estrategicamente posicionados que direcionam para o WhatsApp da academia.
+*   **Segurança Avançada:** Proteção contra vulnerabilidades web, headers de segurança configurados e navegação segura.
+*   **Acessibilidade (WCAG):** Navegação otimizada para leitores de tela e suporte a tecnologias assistivas.
 *   **Conformidade Legal (LGPD):** Inclui aviso de cookies funcional, Política de Privacidade e Termos de Uso completos e personalizáveis.
-*   **Performance:** Carregamento instantâneo utilizando as melhores práticas de desenvolvimento web.
-*   **SEO Otimizado:** Configurado com meta tags para aparecer bem nas buscas do Google e compartilhamentos em redes sociais.
+*   **Performance:** Carregamento instantâneo utilizando as melhores práticas (Lazy Loading, otimização de imagens).
+*   **SEO Otimizado:** Configuração completa de meta tags, sitemap.xml e robots.txt para máxima visibilidade no Google.
 
 ## ⚙️ Personalização do Conteúdo
 
