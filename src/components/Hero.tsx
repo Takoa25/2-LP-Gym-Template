@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
         
         /* --- AJUSTE DE ALTURA DA HERO --- */
         min-h-[80vh]       /* Altura mínima no Mobile */
-        md:min-h-[85vh]    /* Altura mínima no Tablet */
+        md:min-h-[80vh]    /* Altura mínima no Tablet */
         lg:min-h-[85vh]    /* Altura mínima no Desktop */
         
         /* --- AJUSTE DE ALINHAMENTO VERTICAL --- */
@@ -26,10 +26,10 @@ const Hero: React.FC = () => {
         /* --- AJUSTE DE ESPAÇAMENTO (PADDING) --- */
         /* Mobile (celulares) */
         pt-18              /* Espaço acima do texto (topo) */
-        pb-12              /* Espaço abaixo dos botões (base) */
+        pb-10              /* Espaço abaixo dos botões (base) */
 
         /* Tablet (telas médias) */
-        md:pt-40           /* Aumenta o espaço no topo para tablets */
+        md:pt-36           /* Aumenta o espaço no topo para tablets */
 
         /* Desktop (telas grandes) */
         lg:pt-0            /* Zera o espaço no topo (usa centralização automática) */
