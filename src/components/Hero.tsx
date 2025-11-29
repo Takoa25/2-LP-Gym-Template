@@ -25,11 +25,11 @@ const Hero: React.FC = () => {
 
         /* --- AJUSTE DE ESPAÇAMENTO (PADDING) --- */
         /* Mobile (celulares) */
-        pt-20              /* Espaço acima do texto (topo) */
+        pt-18              /* Espaço acima do texto (topo) */
         pb-12              /* Espaço abaixo dos botões (base) */
 
         /* Tablet (telas médias) */
-        md:pt-32           /* Aumenta o espaço no topo para tablets */
+        md:pt-40           /* Aumenta o espaço no topo para tablets */
 
         /* Desktop (telas grandes) */
         lg:pt-0            /* Zera o espaço no topo (usa centralização automática) */
