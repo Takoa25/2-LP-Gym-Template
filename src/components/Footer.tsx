@@ -52,8 +52,8 @@ const Footer: React.FC = () => {
 
           {/* Legal */}
           <div>
-            <h4 className="font-bold text-white mb-4">Políticas</h4>
-            <div className="space-y-2">
+            <h4 className="font-bold text-white mb-6 uppercase tracking-wider text-sm">Políticas</h4>
+            <div className="space-y-4 text-zinc-400 text-sm">
               {content.footer.policies.map((link, index) => {
                 const isPrivacyLink = link.label.toLowerCase().includes('privacidade');
                 const isTermsLink = link.label.toLowerCase().includes('termos');
