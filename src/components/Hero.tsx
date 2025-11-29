@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
         pb-12              /* Espaço abaixo dos botões (base) */
 
         /* Tablet (telas médias) */
-        md:pt-34          /* Aumenta o espaço no topo para tablets */
+        md:pt-30          /* Aumenta o espaço no topo para tablets */
 
         /* Desktop (telas grandes) */
         lg:pt-0            /* Zera o espaço no topo (usa centralização automática) */
