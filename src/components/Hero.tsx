@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
         - md:pt-0 remove esse push e deixa o items-center centralizar no tablet
         - pb mantém espaço para os botões no mobile
         */
-        pt-20 md:pt-0 pb-12
+        pt-18 md:pt-0 pb-12
       `}
     >
       {/* Background Image with Overlay */}
