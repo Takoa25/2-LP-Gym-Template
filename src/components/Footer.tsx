@@ -28,13 +28,13 @@ const Footer: React.FC = () => {
               {content.footer.description}
             </p>
             <div className="flex gap-4">
-              <a href={content.footer.socialLinks.instagram} className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center hover:bg-primary hover:text-primary-contrast transition-all">
+              <a href={content.footer.socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center hover:bg-primary hover:text-primary-contrast transition-all">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href={content.footer.socialLinks.facebook} className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center hover:bg-primary hover:text-primary-contrast transition-all">
+              <a href={content.footer.socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center hover:bg-primary hover:text-primary-contrast transition-all">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href={content.footer.socialLinks.youtube} className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center hover:bg-primary hover:text-primary-contrast transition-all">
+              <a href={content.footer.socialLinks.youtube} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center hover:bg-primary hover:text-primary-contrast transition-all">
                 <Youtube className="w-5 h-5" />
               </a>
             </div>

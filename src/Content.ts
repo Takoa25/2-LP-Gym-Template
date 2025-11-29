@@ -9,7 +9,7 @@ import {
   Calendar,
   Instagram,
   Facebook,
-  Twitter,
+  Youtube,
   Ban,
   BatteryLow,
   Frown
@@ -75,7 +75,7 @@ export const content: ContentConfig = {
   seo: {
     title: "Healthy Academia - Transforme seu Corpo",
     description: "A melhor academia da região com equipamentos de ponta e profissionais qualificados.",
-    domain: "https://healthyacademia.com.br", // URL do site (sem barra no final)
+    domain: "https://healthyacademia.netlify.app", // URL do site (sem barra no final)
     path: "/",
     themeColor: "#EBEB01", // Cor do tema (barra de endereço mobile)
     keywords: "academia, musculação, fitness, saúde, treino, londrina",
@@ -139,8 +139,8 @@ export const content: ContentConfig = {
       { label: 'Início', href: '#hero' },
       { label: 'Modalidades', href: '#services' },
       { label: 'Sobre', href: '#about' },
-      { label: 'Planos', href: '#pricing' },
       { label: 'Localização', href: '#location' },
+      { label: 'Planos', href: '#pricing' },
     ]
   },
 
