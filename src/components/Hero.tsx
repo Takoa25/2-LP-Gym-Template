@@ -15,25 +15,21 @@ const Hero: React.FC = () => {
         flex 
         overflow-hidden 
         
-        /* --- AJUSTE DE ALTURA DA HERO --- */
-        min-h-[80vh]       /* Altura mínima no Mobile */
-        md:min-h-[85vh]    /* Altura mínima no Tablet */
-        lg:min-h-[85vh]    /* Altura mínima no Desktop */
-        
-        /* --- AJUSTE DE ALINHAMENTO VERTICAL --- */
-        md:items-center    /* Centraliza verticalmente a partir de Tablet (md) */
+        /* min-heights por breakpoint (mantém a hero ocupando viewport) */
+        min-h-[80vh] md:min-h-[85vh] lg:min-h-[85vh]
 
-        /* --- AJUSTE DE ESPAÇAMENTO (PADDING) --- */
-        /* Mobile (celulares) */
-        pt-18              /* Espaço acima do texto (topo) */
-        pb-12              /* Espaço abaixo dos botões (base) */
+        /* vertical alignment:
+        - mobile: items-start (top) + top padding para empurrar o bloco um pouco para baixo
+        - tablet+: items-center para centralizar verticalmente
+        */
+        items-start md:items-center
 
-        /* Tablet (telas médias) */
-        md:pt-30          /* Aumenta o espaço no topo para tablets */
-
-        /* Desktop (telas grandes) */
-        lg:pt-0            /* Zera o espaço no topo (usa centralização automática) */
-        lg:pb-0            /* Zera o espaço na base */
+        /* spacing controlado aqui:
+        - pt-24 (mobile) empurra o bloco para baixo no celular
+        - md:pt-0 remove esse push e deixa o items-center centralizar no tablet
+        - pb mantém espaço para os botões no mobile
+        */
+        pt-24 md:pt-0 pb-12
       `}
     >
       {/* Background Image with Overlay */}
@@ -64,7 +60,7 @@ const Hero: React.FC = () => {
         <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent"></div>
       </div>
 
-      <div className="container mx-auto px-4 md:px-8 relative z-10 pt-6 md:pt-8 lg:pt-10 pb-8 md:pb-10 lg:pb-16">
+      <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="max-w-xl lg:max-w-2xl animate-fade-in-up">
           <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 border border-primary/30 rounded-full bg-primary/10 backdrop-blur-sm">
             <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
