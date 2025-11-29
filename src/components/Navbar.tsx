@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
         {/* Logo */}
         <a href="#hero" className="flex items-center gap-2 group">
-          <div className="p-2 bg-primary rounded-lg group-hover:bg-white transition-colors">
+          <div className="p-2 bg-primary rounded-lg group-hover:bg-black transition-colors">
             {/* If logo image exists, use it, else icon */}
             <Dumbbell className="text-primary-contrast w-6 h-6 group-hover:text-primary transition-colors" />
           </div>
