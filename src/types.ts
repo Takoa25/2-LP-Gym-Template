@@ -116,8 +116,6 @@ export interface HeroConfig {
     text: string;
     whatsappMessage: string;
   };
-  paddingClassesMobile: string;
-  paddingClassesDesktop: string;
 }
 
 export interface StatItem {

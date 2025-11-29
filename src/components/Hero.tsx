@@ -8,7 +8,34 @@ const Hero: React.FC = () => {
   const whatsappLink = `https://wa.me/${content.infos.whatsapp}?text=${encodeURIComponent(content.hero.ctaSecondary.whatsappMessage)}`;
 
   return (
-    <section id="hero" className={`relative min-h-[80vh] md:min-h-[85vh] lg:min-h-[85vh] flex md:items-center overflow-hidden ${content.hero.paddingClassesMobile} ${content.hero.paddingClassesDesktop}`}>
+    <section
+      id="hero"
+      className={`
+        relative 
+        flex 
+        overflow-hidden 
+        
+        /* --- AJUSTE DE ALTURA DA HERO --- */
+        min-h-[80vh]       /* Altura mínima no Mobile */
+        md:min-h-[85vh]    /* Altura mínima no Tablet */
+        lg:min-h-[85vh]    /* Altura mínima no Desktop */
+        
+        /* --- AJUSTE DE ALINHAMENTO VERTICAL --- */
+        md:items-center    /* Centraliza verticalmente a partir de Tablet (md) */
+
+        /* --- AJUSTE DE ESPAÇAMENTO (PADDING) --- */
+        /* Mobile (celulares) */
+        pt-20              /* Espaço acima do texto (topo) */
+        pb-12              /* Espaço abaixo dos botões (base) */
+
+        /* Tablet (telas médias) */
+        md:pt-32           /* Aumenta o espaço no topo para tablets */
+
+        /* Desktop (telas grandes) */
+        lg:pt-0            /* Zera o espaço no topo (usa centralização automática) */
+        lg:pb-0            /* Zera o espaço na base */
+      `}
+    >
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <picture>
